@@ -1,0 +1,16 @@
+{
+  "name": "techfest-landing-page",
+  "version": "30.0.0",
+  "description": "Official Landing Page for Techfest 30th Edition, IIT Bombay (techfest.org) - An Aetherial Renaissance",
+  "main": "index.html",
+  "keywords": [
+    "techfest",
+    "iit-bombay",
+    "30th-edition",
+    "aetherial-renaissance",
+    "canvas-2d",
+    "web-audio-api"
+  ],
+  "author": "Techfest IIT Bombay Team",
+  "license": "MIT"
+}

@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Techfest 2026 | IIT Bombay — Asia's Largest Science & Technology Festival</title>
+  <meta name="description" content="Official Portal for Techfest 30th Edition, IIT Bombay. Union Bank of India Presents An Aetherial Renaissance. Dec 16-18. Robowars, AI for Tech Readiness, Unitree G1 Humanoids, Technoholix.">
+  <meta name="theme-color" content="#0B0E17">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;600;700;800&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="cyber-theme">
+  <div class="cyber-overlay" aria-hidden="true"></div>
+  <canvas id="cyber-canvas"></canvas>
+
+  <header class="hud-header" id="top-hud">
+    <div class="hud-container">
+      <div class="hud-left">
+        <a href="#hero" class="brand-link" id="brand-logo">
+          <div class="brand-glyph">
+            <span class="tf-icon">⚡</span>
+            <span class="pulse-ring"></span>
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">TECHFEST</span>
+            <span class="brand-sub">IIT BOMBAY // 30TH EDITION</span>
+          </div>
+        </a>
+
+        <div class="hud-badge status-live">
+          <span class="dot-indicator"></span>
+          <span class="badge-text">30TH EDITION // DEC 16-18</span>
+        </div>
+
+        <div class="hud-coords">
+          <span class="coords-icon">📍</span>
+          <span class="coords-val">POWAI, MUMBAI</span>
+          <span class="coords-tag">IIT BOMBAY CAMPUS</span>
+        </div>
+      </div>
+
+      <nav class="hud-nav" id="main-nav">
+        <a href="#about" class="nav-item"><span class="nav-num">01</span> The Theme</a>
+        <a href="#arenas" class="nav-item"><span class="nav-num">02</span> The Arenas</a>
+        <a href="#competitions" class="nav-item"><span class="nav-num">03</span> Competitions</a>
+        <a href="#pass-studio" class="nav-item"><span class="nav-num">04</span> Delegate Pass</a>
+        <a href="#schedule" class="nav-item"><span class="nav-num">05</span> Schedule</a>
+        <a href="#ca-portal" class="nav-item"><span class="nav-num">06</span> Ambassadors</a>
+      </nav>
+
+      <div class="hud-actions">
+        <button id="audio-toggle-btn" class="hud-btn icon-btn" title="Toggle Tactile Festival Audio" aria-label="Toggle Sound Effects">
+          <span id="audio-icon">🔇</span>
+          <span class="btn-subtext" id="audio-label">SOUND: OFF</span>
+        </button>
+
+        <button id="cmd-palette-btn" class="hud-btn cmd-btn" title="Quick Menu (Ctrl+K)" aria-label="Open Quick Menu">
+          <span class="cmd-key">⌘K</span>
+          <span class="cmd-label">MENU</span>
+        </button>
+
+        <a href="#pass-studio" class="btn btn-primary">
+          <span>GET FREE PASS</span>
+          <span class="btn-arrow">→</span>
+        </a>
+
+        <button id="mobile-menu-btn" class="mobile-toggle" aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="drawer-header">
+      <span class="drawer-title">TECHFEST 30TH EDITION</span>
+      <button id="drawer-close-btn" class="drawer-close" aria-label="Close menu">✕</button>
+    </div>
+    <div class="drawer-links">
+      <a href="#about" class="drawer-link">01 // An Aetherial Renaissance</a>
+      <a href="#arenas" class="drawer-link">02 // Seven Festival Arenas</a>
+      <a href="#competitions" class="drawer-link">03 // Competitions & ₹40L+ Prizes</a>
+      <a href="#pass-studio" class="drawer-link">04 // Custom Delegate Pass</a>
+      <a href="#schedule" class="drawer-link">05 // 3-Day Itinerary</a>
+      <a href="#luminaries" class="drawer-link">06 // Keynote Speakers</a>
+      <a href="#ca-portal" class="drawer-link">07 // Campus Ambassador Network</a>
+      <a href="#pass-studio" class="btn btn-primary w-full mt-4">CLAIM FREE STUDENT PASS →</a>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero-section" id="hero">
+      <div class="hero-container">
+        <h1 class="hero-title">
+          <div class="presenter-tag">
+            <div class="presenter-badge">
+              <span class="ubi-logo-text">UNION BANK OF INDIA</span>
+              <span class="ubi-dot">•</span>
+              <span class="pres-sub">PRESENTS IIT BOMBAY'S</span>
+            </div>
+          </div>
+
+          <span class="title-main">
+            TECHFEST <span class="renaissance-sword-icon">⚔️</span>
+          </span>
+
+          <div class="edition-dates-bar">
+            <span class="edition-badge-gold">30TH EDITION</span>
+            <span>•</span>
+            <span>16TH – 18TH DECEMBER</span>
+          </div>
+
+          <span class="title-sub">ASIA'S LARGEST SCIENCE &amp; TECHNOLOGY FESTIVAL</span>
+          <span class="theme-aetherial-tagline">AN AETHERIAL RENAISSANCE</span>
+        </h1>
+
+        <p class="hero-description">
+          Welcome to the landmark <strong>30th Edition</strong> of Techfest, IIT Bombay. Under the banner of 
+          <strong>An Aetherial Renaissance</strong>, classical human curiosity converges with frontier artificial intelligence, 
+          next-gen <strong>Unitree G1 humanoid robotics</strong>, and heavy-metal <strong>Robowars</strong> across 550 acres of Powai campus.
+        </p>
+
+        <div class="countdown-hud" id="countdown-hud">
+          <div class="countdown-title">
+            <span class="terminal-prompt">⏱️</span> TIME REMAINING UNTIL FESTIVAL GATES OPEN:
+          </div>
+          <div class="countdown-grid">
+            <div class="countdown-box">
+              <span class="count-value" id="count-days">20</span>
+              <span class="count-label">DAYS</span>
+            </div>
+            <div class="countdown-sep">:</div>
+            <div class="countdown-box">
+              <span class="count-value" id="count-hours">12</span>
+              <span class="count-label">HOURS</span>
+            </div>
+            <div class="countdown-sep">:</div>
+            <div class="countdown-box">
+              <span class="count-value" id="count-mins">59</span>
+              <span class="count-label">MINS</span>
+            </div>
+            <div class="countdown-sep">:</div>
+            <div class="countdown-box">
+              <span class="count-value" id="count-secs">42</span>
+              <span class="count-label">SECS</span>
+            </div>
+            <div class="countdown-sep">:</div>
+            <div class="countdown-box countdown-ms">
+              <span class="count-value" id="count-ms">89</span>
+              <span class="count-label">MS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-cta-group">
+          <a href="#pass-studio" class="btn btn-primary btn-lg">
+            <span>GET YOUR DELEGATE PASS</span>
+            <span class="btn-subtext">Free Campus Entry • Instant QR Badge</span>
+          </a>
+
+          <a href="#arenas" class="btn btn-secondary btn-lg">
+            <span>EXPLORE THE 7 ARENAS</span>
+            <span class="btn-subtext">300+ Competitions & Workshops</span>
+          </a>
+
+          <button id="quick-tour-btn" class="btn btn-tertiary">
+            <span>CAMPUS STORY</span>
+          </button>
+        </div>
+
+        <div class="metrics-ticker">
+          <div class="metric-card">
+            <div class="metric-top">
+              <span class="metric-val" data-target="180000">180,000+</span>
+              <span class="metric-tag text-flame">FOOTFALL</span>
+            </div>
+            <div class="metric-desc">Annual students, creators & innovators</div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-top">
+              <span class="metric-val" data-target="2500">2,500+</span>
+              <span class="metric-tag text-cobalt">COLLEGES</span>
+            </div>
+            <div class="metric-desc">Connected across India and beyond</div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-top">
+              <span class="metric-val" data-target="4000000">₹40L+</span>
+              <span class="metric-tag text-sun">PRIZE POOL</span>
+            </div>
+            <div class="metric-desc">Awarded across flagship engineering cups</div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-top">
+              <span class="metric-val" data-target="300">300+</span>
+              <span class="metric-tag text-sage">EVENTS</span>
+            </div>
+            <div class="metric-desc">Combat, AI, workshops & keynote talks</div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-top">
+              <span class="metric-val" data-target="25">25+</span>
+              <span class="metric-tag text-blue">COUNTRIES</span>
+            </div>
+            <div class="metric-desc">International delegations & teams</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-container">
+        <div class="section-hud-bar">
+          <span class="hud-sec-code">01 // THE 30TH EDITION THEME</span>
+          <span class="hud-sec-line"></span>
+          <span class="hud-sec-status">IIT BOMBAY, MUMBAI</span>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-lead">
+            <span class="section-tag">AN AETHERIAL RENAISSANCE</span>
+            <h2 class="section-title">Where Renaissance Curiosity Meets Frontier Technology</h2>
+            <p class="about-body">
+              For its milestone 30th edition, Techfest embraces <strong>An Aetherial Renaissance</strong> — celebrating 
+              the rekindling of human ingenuity, artistic proportion, and scientific boldness. Across 550 acres of Powai campus, 
+              we bridge classical renaissance curiosity with quantum computing, autonomous AI agents, and humanoid robotics.
+            </p>
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <div class="hl-icon">🌿</div>
+                <div class="hl-content">
+                  <h4>The Powai Experience</h4>
+                  <p>Lush green avenues, historic student hostels, and lively festival pavilions welcoming visitors from across the world.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="hl-icon">🤝</div>
+                <div class="hl-content">
+                  <h4>Union Bank of India International Summit</h4>
+                  <p>Flagship policy, science, and tech leadership conclave hosting global pioneers, policymakers, and Nobel Laureates.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="hl-icon">🔬</div>
+                <div class="hl-content">
+                  <h4>Unitree G1 & Advanced Robotics Expo</h4>
+                  <p>Experience world-first demonstrations of agile bipedal AI humanoids and defense innovations.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-visual-panel">
+            <div class="cyber-terminal-card">
+              <div class="terminal-header">
+                <div class="terminal-dots">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </div>
+                <span class="terminal-title">A Day at Techfest 30th Edition</span>
+                <span class="terminal-status">LIVE CAMPUS</span>
+              </div>
+
+              <div class="terminal-content">
+                <div class="campus-moment">
+                  <span class="moment-time">08:30 AM</span>
+                  <div class="moment-body">
+                    <h5 class="moment-title">Arrival at the Iconic Main Gate</h5>
+                    <p class="moment-desc">Thousands of students stream beneath the towering campus trees, badges in hand, ready for the day ahead.</p>
+                  </div>
+                </div>
+
+                <div class="campus-moment">
+                  <span class="moment-time">11:00 AM</span>
+                  <div class="moment-body">
+                    <h5 class="moment-title">Sparks Fly at International Robowars</h5>
+                    <p class="moment-desc">60kg titanium bots clash inside the fortified arena at Gymkhana to the roar of 15,000 spectators.</p>
+                  </div>
+                </div>
+
+                <div class="campus-moment">
+                  <span class="moment-time">02:30 PM</span>
+                  <div class="moment-body">
+                    <h5 class="moment-title">International Summit by Union Bank</h5>
+                    <p class="moment-desc">Convocation Hall hushes as world leaders and space scientists debate the next technological epoch.</p>
+                  </div>
+                </div>
+
+                <div class="campus-moment">
+                  <span class="moment-time">06:00 PM</span>
+                  <div class="moment-body">
+                    <h5 class="moment-title">Unitree G1 Humanoid Demonstrations</h5>
+                    <p class="moment-desc">Visitors interact directly with bipedal AI humanoids demonstrating real-time balance and agility.</p>
+                  </div>
+                </div>
+
+                <div class="campus-moment">
+                  <span class="moment-time">08:30 PM</span>
+                  <div class="moment-body">
+                    <h5 class="moment-title">Technoholix Lights Up the Sky</h5>
+                    <p class="moment-desc">500 synchronized drones form celestial Renaissance patterns above Powai Lake as EDM headliners take the stage.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="terminal-footer">
+                <div class="stat-mini">
+                  <span class="s-label">DATES</span>
+                  <span class="s-val">DEC 16–18</span>
+                </div>
+                <div class="stat-mini">
+                  <span class="s-label">EDITION</span>
+                  <span class="s-val">30TH ANNUAL</span>
+                </div>
+                <div class="stat-mini">
+                  <span class="s-label">ADMISSIONS</span>
+                  <span class="s-val text-sage">FREE FOR ALL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section arenas-section" id="arenas">
+      <div class="section-container">
+        <div class="section-hud-bar">
+          <span class="hud-sec-code">02 // FESTIVAL PILLARS</span>
+          <span class="hud-sec-line"></span>
+          <span class="hud-sec-status">7 DEDICATED ARENAS</span>
+        </div>
+
+        <div class="section-header-center">
+          <span class="section-tag">DISCOVER THE FESTIVAL</span>
+          <h2 class="section-title">The Seven Epicenters of Techfest</h2>
+          <p class="section-subtitle">
+            From the visceral roar of heavy-metal robotic combat to thoughtful conversations with scientific pioneers, 
+            explore the seven unique dimensions that make Techfest unforgettable.
+          </p>
+        </div>
+
+        <div class="filter-pills" id="arena-filter-group">
+          <button class="filter-pill active" data-filter="all">ALL ARENAS</button>
+          <button class="filter-pill" data-filter="combat">ROBOTICS & COMBAT</button>
+          <button class="filter-pill" data-filter="ai">AI & CODING</button>
+          <button class="filter-pill" data-filter="masterclass">WORKSHOPS</button>
+          <button class="filter-pill" data-filter="keynotes">SUMMITS & TALKS</button>
+          <button class="filter-pill" data-filter="exhibitions">EXHIBITIONS</button>
+          <button class="filter-pill" data-filter="entertainment">TECHNOHOLIX & OZONE</button>
+        </div>
+
+        <div class="arenas-grid" id="arenas-container">
+          <article class="arena-card" data-category="combat">
+            <div class="card-header">
+              <span class="card-badge bg-amber">FLAGSHIP COMBAT</span>
+              <span class="card-code">ARENA 01</span>
+            </div>
+            <div class="card-media">
+              <div class="vector-art combat-art">
+                <div class="arena-svg-wrapper">
+                  <svg viewBox="0 0 100 100" class="cyber-svg" fill="none" stroke="currentColor">
+                    <circle cx="50" cy="50" r="40" stroke-width="2" stroke-dasharray="4 2" />
+                    <polygon points="50,15 85,75 15,75" stroke-width="2" />
+                    <circle cx="50" cy="55" r="12" stroke-width="3" />
+                    <line x1="20" y1="20" x2="80" y2="80" stroke-width="2" />
+                    <line x1="80" y1="20" x2="20" y2="80" stroke-width="2" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">International Robowars</h3>
+              <p class="card-desc">
+                Asia's supreme combat robotics championship. 60kg and 15kg battlebots clashing inside a fortified, bulletproof arena for glory.
+              </p>
+              <div class="card-meta">
+                <span class="meta-tag">🏆 ₹12,00,000+ Prize</span>
+                <span class="meta-tag">🌍 Global Teams</span>
+                <span class="meta-tag">📍 Gymkhana Grounds</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-outline arena-modal-btn" data-modal="robowars">
+                ARENA DETAILS →
+              </button>
+            </div>
+          </article>
+
+          <article class="arena-card" data-category="ai">
+            <div class="card-header">
+              <span class="card-badge bg-cobalt">AI & GOVERNANCE</span>
+              <span class="card-code">ARENA 02</span>
+            </div>
+            <div class="card-media">
+              <div class="vector-art ai-art">
+                <div class="arena-svg-wrapper">
+                  <svg viewBox="0 0 100 100" class="cyber-svg" fill="none" stroke="currentColor">
+                    <rect x="20" y="20" width="60" height="60" rx="8" stroke-width="2" />
+                    <circle cx="50" cy="50" r="16" stroke-width="2" />
+                    <path d="M50 10 V20 M50 80 V90 M10 50 H20 M80 50 H90" stroke-width="2" />
+                    <circle cx="50" cy="50" r="4" fill="currentColor" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">AI for Technology Readiness</h3>
+              <p class="card-desc">
+                Partnered with UN ESCAP and APCTT. Deploy frontier artificial intelligence architectures to solve real-world industrial and humanitarian readiness.
+              </p>
+              <div class="card-meta">
+                <span class="meta-tag">🌐 UN ESCAP / APCTT</span>
+                <span class="meta-tag">🧠 ₹8,00,000+ Prize</span>
+                <span class="meta-tag">📍 Campus + Global</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-outline arena-modal-btn" data-modal="ai">
+                ARENA DETAILS →
+              </button>
+            </div>
+          </article>
+
+          <article class="arena-card" data-category="masterclass">
+            <div class="card-header">
+              <span class="card-badge bg-sun">HANDS-ON LABS</span>
+              <span class="card-code">ARENA 03</span>
+            </div>
+            <div class="card-media">
+              <div class="vector-art workshop-art">
+                <div class="arena-svg-wrapper">
+                  <svg viewBox="0 0 100 100" class="cyber-svg" fill="none" stroke="currentColor">
+                    <polygon points="50,15 90,38 90,82 50,95 10,82 10,38" stroke-width="2" />
+                    <line x1="50" y1="15" x2="50" y2="95" stroke-width="1.5" />
+                    <line x1="50" y1="55" x2="90" y2="38" stroke-width="1.5" />
+                    <line x1="50" y1="55" x2="10" y2="38" stroke-width="1.5" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Masterclasses & Labs</h3>
+              <p class="card-desc">
+                Certified bootcamps offering official IIT Bombay certifications across AI, Quantum Computing, Drone Design, and Ethical Hacking.
+              </p>
+              <div class="card-meta">
+                <span class="meta-tag">📜 IITB Certification</span>
+                <span class="meta-tag">🛠️ Hardware Kits</span>
+                <span class="meta-tag">👨‍🏫 Industry Mentors</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-outline arena-modal-btn" data-modal="workshops">
+                ARENA DETAILS →
+              </button>
+            </div>
+          </article>
+
+          <article class="arena-card" data-category="keynotes">
+            <div class="card-header">
+              <span class="card-badge bg-sage">UNION BANK SUMMIT</span>
+              <span class="card-code">ARENA 04</span>
+            </div>
+            <div class="card-media">
+              <div class="vector-art keynote-art">
+                <div class="arena-svg-wrapper">
+                  <svg viewBox="0 0 100 100" class="cyber-svg" fill="none" stroke="currentColor">
+                    <circle cx="50" cy="35" r="20" stroke-width="2" />
+                    <path d="M15 85 C15 65 30 55 50 55 C70 55 85 65 85 85" stroke-width="2" />
+                    <circle cx="50" cy="35" r="6" fill="currentColor" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">International Summit</h3>
+              <p class="card-desc">
+                Presented by Union Bank of India. High-level dialogues with Nobel Laureates, ISRO scientists, and global tech icons on humanity's next renaissance.
+              </p>
+              <div class="card-meta">
+                <span class="meta-tag">🏛️ Union Bank Presenter</span>
+                <span class="meta-tag">🎤 Convocation Hall</span>
+                <span class="meta-tag">🌟 Global Visionaries</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-outline arena-modal-btn" data-modal="keynotes">
+                ARENA DETAILS →
+              </button>
+            </div>
+          </article>
+
+          <article class="arena-card" data-category="exhibitions">
+            <div class="card-header">
+              <span class="card-badge bg-blue">UNITREE HUMANOID</span>
+              <span class="card-code">ARENA 05</span>
+            </div>
+            <div class="card-media">
+              <div class="vector-art expo-art">
+                <div class="arena-svg-wrapper">
+                  <svg viewBox="0 0 100 100" class="cyber-svg" fill="none" stroke="currentColor">
+                    <rect x="15" y="25" width="70" height="50" rx="4" stroke-width="2" />
+                    <circle cx="50" cy="50" r="14" stroke-width="2" stroke-dasharray="3 3" />
+                    <line x1="30" y1="85" x2="70" y2="85" stroke-width="3" />
+                    <line x1="50" y1="75" x2="50" y2="85" stroke-width="2" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Unitree G1 & Global Expo</h3>
+              <p class="card-desc">
+                Witness live demonstrations of the revolutionary Unitree G1 humanoid robot, bionic limbs, brain-computer interfaces, and planetary exploration rovers.
+              </p>
+              <div class="card-meta">
+                <span class="meta-tag">🤖 Unitree G1 Robot</span>
+                <span class="meta-tag">🚀 Space Exploration</span>
+                <span class="meta-tag">🧠 BCI Interfaces</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-outline arena-modal-btn" data-modal="exhibitions">
+                ARENA DETAILS →
+              </button>
+            </div>
+          </article>
+
+          <article class="arena-card" data-category="entertainment">
+            <div class="card-header">
+              <span class="card-badge bg-flame">NIGHT SPECTACLES</span>
+              <span class="card-code">ARENA 06</span>
+            </div>
+            <div class="card-media">
+              <div class="vector-art technoholix-art">
+                <div class="arena-svg-wrapper">
+                  <svg viewBox="0 0 100 100" class="cyber-svg" fill="none" stroke="currentColor">
+                    <circle cx="50" cy="50" r="35" stroke-width="2" />
+                    <line x1="50" y1="10" x2="50" y2="90" stroke-width="2" />
+                    <line x1="10" y1="50" x2="90" y2="50" stroke-width="2" />
+                    <circle cx="50" cy="50" r="10" fill="currentColor" opacity="0.3" />
+                    <path d="M25 25 L75 75 M75 25 L25 75" stroke-width="1.5" stroke-dasharray="2 2" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Technoholix</h3>
+              <p class="card-desc">
+                The visual crown of Techfest. International EDM headliners, 3D laser projection mapping, and synchronized 500-drone swarms over Powai Lake.
+              </p>
+              <div class="card-meta">
+                <span class="meta-tag">🎆 500 Drone Swarm</span>
+                <span class="meta-tag">🔊 50k W Concert Audio</span>
+                <span class="meta-tag">🌌 Laser Spectacle</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-outline arena-modal-btn" data-modal="technoholix">
+                ARENA DETAILS →
+              </button>
+            </div>
+          </article>
+
+          <article class="arena-card" data-category="entertainment">
+            <div class="card-header">
+              <span class="card-badge bg-cobalt">GAMING & THRILLS</span>
+              <span class="card-code">ARENA 07</span>
+            </div>
+            <div class="card-media">
+              <div class="vector-art ozone-art">
+                <div class="arena-svg-wrapper">
+                  <svg viewBox="0 0 100 100" class="cyber-svg" fill="none" stroke="currentColor">
+                    <rect x="20" y="35" width="60" height="32" rx="16" stroke-width="2" />
+                    <circle cx="35" cy="51" r="5" fill="currentColor" />
+                    <rect x="58" y="47" width="8" height="8" stroke-width="2" />
+                    <circle cx="72" cy="47" r="3" stroke-width="2" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Ozone: Interactive Leisure</h3>
+              <p class="card-desc">
+                High-octane festival thrill. Formula 1 telemetry motion simulators, tactical laser tag arenas, drone soccer matches, and VR combat setups.
+              </p>
+              <div class="card-meta">
+                <span class="meta-tag">🏎️ F1 Motion Rigs</span>
+                <span class="meta-tag">🎯 Laser Arena</span>
+                <span class="meta-tag">🎮 Drone Soccer</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-outline arena-modal-btn" data-modal="ozone">
+                ARENA DETAILS →
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section comp-section" id="competitions">
+      <div class="section-container">
+        <div class="section-hud-bar">
+          <span class="hud-sec-code">03 // 30TH EDITION CHALLENGES</span>
+          <span class="hud-sec-line"></span>
+          <span class="hud-sec-status">PRIZE POOL: ₹40,00,000+</span>
+        </div>
+
+        <div class="comp-layout">
+          <div class="comp-sidebar">
+            <span class="section-tag">TEST YOUR INGENUITY</span>
+            <h2 class="section-title">The Crucible of Young Builders</h2>
+            <p class="comp-sidebar-text">
+              Compete alongside passionate student engineering teams from across the country and the world. 
+              Review the challenge briefs, build your bot or system, and take home the national trophy.
+            </p>
+
+            <div class="prize-accumulator-box">
+              <div class="acc-header">
+                <span class="acc-icon">🏆</span>
+                <span class="acc-title">FESTIVAL PRIZE POOL</span>
+              </div>
+              <div class="acc-value">₹40,00,000+</div>
+              <div class="acc-breakdown">
+                <div class="acc-row">
+                  <span>Robotics & Drone Leagues:</span>
+                  <span>₹18,50,000</span>
+                </div>
+                <div class="acc-row">
+                  <span>AI, Coding & UN ESCAP:</span>
+                  <span>₹12,00,000</span>
+                </div>
+                <div class="acc-row">
+                  <span>India @ 71/100 & InnovateX:</span>
+                  <span>₹9,50,000</span>
+                </div>
+              </div>
+              <a href="#pass-studio" class="btn btn-primary w-full mt-3">REGISTER TO COMPETE →</a>
+            </div>
+          </div>
+
+          <div class="comp-content">
+            <div class="comp-cards-list">
+              <div class="comp-strip-card" data-comp="robowars">
+                <div class="comp-strip-left">
+                  <span class="comp-category bg-flame">ROBOTICS COMBAT</span>
+                  <h3 class="comp-name">International Robowars (60kg & 15kg)</h3>
+                  <p class="comp-summary">Battlebots-style cage carnage. Pneumatic flippers, spinning drums, and titanium wedges.</p>
+                </div>
+                <div class="comp-strip-right">
+                  <div class="comp-prize-val">₹12,00,000</div>
+                  <button class="btn btn-outline btn-sm arena-modal-btn" data-modal="robowars">RULEBOOK</button>
+                </div>
+              </div>
+
+              <div class="comp-strip-card" data-comp="ai-escap">
+                <div class="comp-strip-left">
+                  <span class="comp-category bg-cobalt">UN ESCAP / APCTT</span>
+                  <h3 class="comp-name">AI for Technology Readiness</h3>
+                  <p class="comp-summary">Global challenge to architect scalable artificial intelligence pipelines for real-world industry adoption.</p>
+                </div>
+                <div class="comp-strip-right">
+                  <div class="comp-prize-val">₹4,50,000</div>
+                  <button class="btn btn-outline btn-sm arena-modal-btn" data-modal="ai">RULEBOOK</button>
+                </div>
+              </div>
+
+              <div class="comp-strip-card" data-comp="india-71">
+                <div class="comp-strip-left">
+                  <span class="comp-category bg-sun">CIVIC INNOVATION</span>
+                  <h3 class="comp-name">The India @ 71/100 Challenge</h3>
+                  <p class="comp-summary">Formulate structural, technological, and policy innovations to accelerate India's centennial development.</p>
+                </div>
+                <div class="comp-strip-right">
+                  <div class="comp-prize-val">₹3,50,000</div>
+                  <button class="btn btn-outline btn-sm arena-modal-btn" data-modal="keynotes">RULEBOOK</button>
+                </div>
+              </div>
+
+              <div class="comp-strip-card" data-comp="innovatex">
+                <div class="comp-strip-left">
+                  <span class="comp-category bg-sage">HARDWARE & PROTOTYPE</span>
+                  <h3 class="comp-name">InnovateX: Sustainable Engineering</h3>
+                  <p class="comp-summary">Design working hardware prototypes addressing renewable clean energy and urban infrastructure.</p>
+                </div>
+                <div class="comp-strip-right">
+                  <div class="comp-prize-val">₹2,50,000</div>
+                  <button class="btn btn-outline btn-sm arena-modal-btn" data-modal="workshops">RULEBOOK</button>
+                </div>
+              </div>
+
+              <div class="comp-strip-card" data-comp="cozmo">
+                <div class="comp-strip-left">
+                  <span class="comp-category bg-blue">AUTONOMOUS NAVIGATION</span>
+                  <h3 class="comp-name">Meshmerize & Cozmo Clench</h3>
+                  <p class="comp-summary">Line follower micro-bots and robotic gripper automation solving algorithmic mazes.</p>
+                </div>
+                <div class="comp-strip-right">
+                  <div class="comp-prize-val">₹2,00,000</div>
+                  <button class="btn btn-outline btn-sm arena-modal-btn" data-modal="robowars">RULEBOOK</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pass-section" id="pass-studio">
+      <div class="section-container">
+        <div class="section-hud-bar">
+          <span class="hud-sec-code">04 // FESTIVAL PASS STUDIO</span>
+          <span class="hud-sec-line"></span>
+          <span class="hud-sec-status">30TH EDITION ADMISSIONS OPEN</span>
+        </div>
+
+        <div class="section-header-center">
+          <span class="section-tag">CUSTOMIZE YOUR 30TH EDITION LANYARD PASS</span>
+          <h2 class="section-title">Your Official Festival Access Credential</h2>
+          <p class="section-subtitle">
+            Generate your personalized digital festival pass for the 30th Edition. Features your track interest, official verification code, 
+            and instant QR pass for free entry at all IIT Bombay gates.
+          </p>
+        </div>
+
+        <div class="pass-studio-grid">
+          <div class="pass-controls-panel">
+            <div class="panel-header">
+              <span>DELEGATE DETAILS INITIALIZER</span>
+            </div>
+
+            <form id="pass-generator-form" class="pass-form" onsubmit="event.preventDefault();">
+              <div class="form-group">
+                <label for="pass-name-input">ATTENDEE FULL NAME</label>
+                <input type="text" id="pass-name-input" class="cyber-input" placeholder="e.g. Maya Chen" value="Alex Rivera" required>
+              </div>
+
+              <div class="form-group">
+                <label for="pass-college-input">INSTITUTION / UNIVERSITY / COMPANY</label>
+                <input type="text" id="pass-college-input" class="cyber-input" placeholder="e.g. IIT Bombay, BITS Pilani" value="Indian Institute of Technology" required>
+              </div>
+
+              <div class="form-group">
+                <label for="pass-domain-select">CORE ARENA INTEREST</label>
+                <select id="pass-domain-select" class="cyber-select">
+                  <option value="ROBOTICS & HARDWARE" selected>Robotics & Robowars Combat</option>
+                  <option value="AI & AUTONOMOUS SYSTEMS">AI for Tech Readiness & LLMs</option>
+                  <option value="UNITREE HUMANOID EXPO">Unitree Humanoid Robotics</option>
+                  <option value="UNION BANK SUMMIT">Union Bank International Summit</option>
+                  <option value="TECHNOHOLIX VIP ACCESS">Technoholix & Drone Symphony</option>
+                  <option value="GENERAL TECH ENTHUSIAST">All-Access General Attendee</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>LAMINATE ACCENT COLOR</label>
+                <div class="theme-color-picker" id="pass-color-picker">
+                  <button type="button" class="color-swatch active" data-color="cyan" style="--swatch-color: #FF5E3A;" title="Festival Flame"></button>
+                  <button type="button" class="color-swatch" data-color="purple" style="--swatch-color: #3B82F6;" title="IITB Cobalt"></button>
+                  <button type="button" class="color-swatch" data-color="emerald" style="--swatch-color: #10B981;" title="Campus Sage"></button>
+                  <button type="button" class="color-swatch" data-color="amber" style="--swatch-color: #F59E0B;" title="Trophy Sun"></button>
+                </div>
+              </div>
+
+              <div class="pass-form-actions">
+                <button type="button" id="randomize-pass-btn" class="btn btn-secondary">
+                  <span>🎲 RE-ROLL INFO</span>
+                </button>
+                <button type="button" id="download-pass-btn" class="btn btn-primary">
+                  <span>⚡ DOWNLOAD PASS (PNG)</span>
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="pass-preview-panel">
+            <div class="holo-badge-card" id="holographic-badge" data-theme="cyan">
+              <div class="badge-header">
+                <div class="badge-brand">
+                  <span class="badge-logo-mark">⚡</span>
+                  <div>
+                    <div class="badge-fest-name">TECHFEST 2026</div>
+                    <div class="badge-org-name">IIT BOMBAY // 30TH EDITION</div>
+                  </div>
+                </div>
+                <div class="badge-chip">
+                  <div class="chip-grid"></div>
+                  <span class="chip-label">30TH EDITION</span>
+                </div>
+              </div>
+
+              <div class="badge-body">
+                <div class="badge-tier-pill" id="badge-tier-display">OFFICIAL DELEGATE PASS</div>
+                <h3 class="badge-attendee-name" id="badge-name-display">Alex Rivera</h3>
+                <div class="badge-attendee-org" id="badge-org-display">Indian Institute of Technology</div>
+
+                <div class="badge-meta-row">
+                  <div class="b-meta-col">
+                    <span class="b-label">TRACK FOCUS</span>
+                    <span class="b-val text-flame" id="badge-track-display">ROBOTICS & HARDWARE</span>
+                  </div>
+                  <div class="b-meta-col">
+                    <span class="b-label">DATES</span>
+                    <span class="b-val">DEC 16–18, 2026</span>
+                  </div>
+                  <div class="b-meta-col">
+                    <span class="b-label">GATE ACCESS</span>
+                    <span class="b-val text-sage">MAIN / SAC / CONVO</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="badge-footer">
+                <div class="badge-qr-box">
+                  <svg id="badge-qr-svg" viewBox="0 0 80 80" class="qr-svg" width="68" height="68">
+                    <rect width="80" height="80" fill="#FFFFFF" />
+                    <rect x="5" y="5" width="22" height="22" fill="#0B0E17" />
+                    <rect x="9" y="9" width="14" height="14" fill="#FFFFFF" />
+                    <rect x="12" y="12" width="8" height="8" fill="#0B0E17" />
+
+                    <rect x="53" y="5" width="22" height="22" fill="#0B0E17" />
+                    <rect x="57" y="9" width="14" height="14" fill="#FFFFFF" />
+                    <rect x="60" y="12" width="8" height="8" fill="#0B0E17" />
+
+                    <rect x="5" y="53" width="22" height="22" fill="#0B0E17" />
+                    <rect x="9" y="57" width="14" height="14" fill="#FFFFFF" />
+                    <rect x="12" y="60" width="8" height="8" fill="#0B0E17" />
+
+                    <circle cx="38" cy="15" r="3" fill="#0B0E17" />
+                    <circle cx="45" cy="20" r="2.5" fill="#0B0E17" />
+                    <circle cx="38" cy="35" r="3" fill="#0B0E17" />
+                    <circle cx="50" cy="45" r="3.5" fill="#0B0E17" />
+                    <circle cx="20" cy="40" r="3" fill="#0B0E17" />
+                    <circle cx="65" cy="65" r="3" fill="#0B0E17" />
+                    <circle cx="45" cy="65" r="3" fill="#0B0E17" />
+                    <circle cx="60" cy="40" r="3" fill="#0B0E17" />
+                    <circle cx="35" cy="55" r="3" fill="#0B0E17" />
+                  </svg>
+                </div>
+                <div class="badge-barcode-block">
+                  <div class="barcode-lines" aria-hidden="true"></div>
+                  <div class="badge-serial-hash" id="badge-serial-display">TF30-BOMBAY-9842-88X</div>
+                  <div class="badge-auth-stamp">AN AETHERIAL RENAISSANCE • IIT BOMBAY</div>
+                </div>
+              </div>
+            </div>
+            <div class="badge-tip-note">
+              <span>💡 Instant entry via QR verification at IIT Bombay Main Gate & Gymkhana Grounds.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section schedule-section" id="schedule">
+      <div class="section-container">
+        <div class="section-hud-bar">
+          <span class="hud-sec-code">05 // 30TH EDITION SCHEDULE</span>
+          <span class="hud-sec-line"></span>
+          <span class="hud-sec-status">3 FULL DAYS OF DISCOVERY</span>
+        </div>
+
+        <div class="section-header-center">
+          <span class="section-tag">HOURLY ITINERARY</span>
+          <h2 class="section-title">The Three Days of Techfest 30th Edition</h2>
+          <p class="section-subtitle">
+            Plan your festival route across campus. Filter by day to discover keynotes, combat rounds, workshops, and concerts.
+          </p>
+        </div>
+
+        <div class="schedule-tabs" id="schedule-tabs">
+          <button class="sched-tab active" data-day="day1">
+            <span class="tab-day">DAY 01</span>
+            <span class="tab-date">DEC 16, 2026</span>
+            <span class="tab-theme">GENESIS & INAUGURATION</span>
+          </button>
+          <button class="sched-tab" data-day="day2">
+            <span class="tab-day">DAY 02</span>
+            <span class="tab-date">DEC 17, 2026</span>
+            <span class="tab-theme">UNION BANK SUMMIT & EXPO</span>
+          </button>
+          <button class="sched-tab" data-day="day3">
+            <span class="tab-day">DAY 03</span>
+            <span class="tab-date">DEC 18, 2026</span>
+            <span class="tab-theme">ROBOWARS FINALS & DRONE BALLET</span>
+          </button>
+        </div>
+
+        <div class="schedule-content" id="schedule-content">
+          <div class="day-timeline active" id="timeline-day1">
+            <div class="timeline-item">
+              <div class="time-col">
+                <span class="time-val">09:30 AM</span>
+                <span class="venue-val">Convocation Hall</span>
+              </div>
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="t-badge bg-flame">CEREMONIAL</div>
+                <h4 class="t-title">Grand 30th Edition Inauguration Ceremony</h4>
+                <p class="t-desc">Opening addresses by the Director of IIT Bombay and leaders from Union Bank of India and national scientific agencies.</p>
+                <div class="t-tags"><span>Open to All</span><span>Live Webcast</span></div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="time-col">
+                <span class="time-val">11:00 AM</span>
+                <span class="venue-val">Gymkhana Ground</span>
+              </div>
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="t-badge bg-amber">COMBAT ARENA</div>
+                <h4 class="t-title">International Robowars: Prelims Clash (15kg & 60kg)</h4>
+                <p class="t-desc">Round 1 knockout matches in the bulletproof cage. Over 40 national and international battlebots.</p>
+                <div class="t-tags"><span>High Octane</span><span>Armored Arena</span></div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="time-col">
+                <span class="time-val">02:00 PM</span>
+                <span class="venue-val">Lecture Hall Complex</span>
+              </div>
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="t-badge bg-sun">WORKSHOP LAB</div>
+                <h4 class="t-title">Generative AI Masterclass & Quantum Simulators</h4>
+                <p class="t-desc">Hands-on architecture labs with NVIDIA and Google Cloud research scientists.</p>
+                <div class="t-tags"><span>Laptop Required</span><span>Certified</span></div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="time-col">
+                <span class="time-val">07:30 PM</span>
+                <span class="venue-val">Gymkhana Main Stage</span>
+              </div>
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="t-badge bg-flame">SPECTACLE</div>
+                <h4 class="t-title">Technoholix Opening: Laser Symphony & Kinetic Show</h4>
+                <p class="t-desc">International visual performers blending laser harp instrumentation with dynamic electronic arts.</p>
+                <div class="t-tags"><span>Night Show</span><span>Light Spectacle</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="day-timeline" id="timeline-day2">
+            <div class="timeline-item">
+              <div class="time-col">
+                <span class="time-val">10:00 AM</span>
+                <span class="venue-val">Convocation Hall</span>
+              </div>
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="t-badge bg-sage">UNION BANK SUMMIT</div>
+                <h4 class="t-title">The International Summit: An Aetherial Renaissance</h4>
+                <p class="t-desc">Presented by Union Bank of India. Global keynote dialogues featuring Nobel Laureates and ISRO Space Mission Directors.</p>
+                <div class="t-tags"><span>Union Bank</span><span>Global Conclave</span></div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="time-col">
+                <span class="time-val">12:30 PM</span>
+                <span class="venue-val">Indoor Sports Complex</span>
+              </div>
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="t-badge bg-blue">GLOBAL EXPO</div>
+                <h4 class="t-title">Unitree G1 Humanoid Robot Demonstration</h4>
+                <p class="t-desc">Live demonstrations of the bipedal AI humanoid Unitree G1, robotic quadruped dogs, and neural control headsets.</p>
+                <div class="t-tags"><span>Unitree G1</span><span>Hands-on Demo</span></div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="time-col">
+                <span class="time-val">03:30 PM</span>
+                <span class="venue-val">SAC Lawn</span>
+              </div>
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="t-badge bg-cobalt">DRONE ARENA</div>
+                <h4 class="t-title">International Drone Soccer Grand Prix</h4>
+                <p class="t-desc">Caged aerial drone battles maneuvering through suspended glowing rings at 80 km/h.</p>
+                <div class="t-tags"><span>Aerial Sport</span><span>Fast Paced</span></div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="time-col">
+                <span class="time-val">08:00 PM</span>
+                <span class="venue-val">Gymkhana Main Stage</span>
+              </div>
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="t-badge bg-flame">EDM CONCERT</div>
+                <h4 class="t-title">Technoholix EDM Night: International Headliner</h4>
+                <p class="t-desc">Massive 50,000-watt sound experience with top international electronic music artists and pyrotechnics.</p>
+                <div class="t-tags"><span>EDM Night</span><span>Festival Crowd</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="day-timeline" id="timeline-day3">
+            <div class="timeline-item">
+              <div class="time-col">
+                <span class="time-val">10:30 AM</span>
+                <span class="venue-val">TechConnect Pavilion</span>
+              </div>
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="t-badge bg-blue">R&D EXPO</div>
+                <h4 class="t-title">TechConnect 2026 & The India @ 71/100 Finals</h4>
+                <p class="t-desc">Over 150 patented student inventions and national civic policy prototypes presented to industry leaders.</p>
+                <div class="t-tags"><span>DeepTech</span><span>Research Innovations</span></div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="time-col">
+                <span class="time-val">02:00 PM</span>
+                <span class="venue-val">Gymkhana Ground</span>
+              </div>
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="t-badge bg-amber">CHAMPIONSHIP</div>
+                <h4 class="t-title">Robowars International Grand Finals (Title Bout)</h4>
+                <p class="t-desc">The top finalists clash for the ₹12,00,000 championship trophy before 15,000 cheering spectators.</p>
+                <div class="t-tags"><span>Title Match</span><span>Trophy Presentation</span></div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="time-col">
+                <span class="time-val">05:30 PM</span>
+                <span class="venue-val">Convocation Hall</span>
+              </div>
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="t-badge bg-cobalt">VALEDICTORY</div>
+                <h4 class="t-title">Grand Prize Distribution & Valedictory Ceremony</h4>
+                <p class="t-desc">Distribution of ₹40L+ prize pools, certificates, and closing remarks by festival convenors.</p>
+                <div class="t-tags"><span>Prizes</span><span>Certificates</span></div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="time-col">
+                <span class="time-val">08:00 PM</span>
+                <span class="venue-val">Gymkhana Main Stage</span>
+              </div>
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <div class="t-badge bg-flame">MEGA FINALE</div>
+                <h4 class="t-title">Technoholix Grand Finale & 500-Drone Aerial Ballet</h4>
+                <p class="t-desc">Spectacular sky choreography featuring 500 synchronized LED drones over Powai Lake.</p>
+                <div class="t-tags"><span>Drone Ballet</span><span>Fireworks</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section luminaries-section" id="luminaries">
+      <div class="section-container">
+        <div class="section-hud-bar">
+          <span class="hud-sec-code">06 // GLOBAL VOICES</span>
+          <span class="hud-sec-line"></span>
+          <span class="hud-sec-status">KEYNOTE SPEAKERS & GUESTS</span>
+        </div>
+
+        <div class="section-header-center">
+          <span class="section-tag">VOICES THAT SHAPE CIVILIZATION</span>
+          <h2 class="section-title">Icons of Science, Industry & Space</h2>
+          <p class="section-subtitle">
+            Across 30 editions, Techfest has hosted visionary thinkers and changemakers. Explore the minds who have graced our stages.
+          </p>
+        </div>
+
+        <div class="luminaries-grid">
+          <div class="luminary-card">
+            <div class="luminary-avatar avatar-apj">
+              <span class="avatar-glyph">🚀</span>
+            </div>
+            <div class="luminary-info">
+              <span class="luminary-role text-sun">HONORED LEGACY</span>
+              <h3 class="luminary-name">Dr. A.P.J. Abdul Kalam</h3>
+              <p class="luminary-title">Former President of India & Missile Scientist</p>
+              <p class="luminary-quote">"Dream, dream, dream. Dreams transform into thoughts and thoughts result in action."</p>
+            </div>
+          </div>
+
+          <div class="luminary-card">
+            <div class="luminary-avatar avatar-sharma">
+              <span class="avatar-glyph">🛰️</span>
+            </div>
+            <div class="luminary-info">
+              <span class="luminary-role text-flame">ASTRONAUT HERO</span>
+              <h3 class="luminary-name">Wg Cdr Rakesh Sharma</h3>
+              <p class="luminary-title">First Indian Citizen in Space</p>
+              <p class="luminary-quote">Keynote on orbital perspectives and the burgeoning era of human lunar and Mars exploration.</p>
+            </div>
+          </div>
+
+          <div class="luminary-card">
+            <div class="luminary-avatar avatar-murthy">
+              <span class="avatar-glyph">💼</span>
+            </div>
+            <div class="luminary-info">
+              <span class="luminary-role text-cobalt">TECH PIONEER</span>
+              <h3 class="luminary-name">N.R. Narayana Murthy</h3>
+              <p class="luminary-title">Founder, Infosys & Philanthropist</p>
+              <p class="luminary-quote">Addressing student engineers on building scalable software enterprises and ethical nation-building.</p>
+            </div>
+          </div>
+
+          <div class="luminary-card">
+            <div class="luminary-avatar avatar-wales">
+              <span class="avatar-glyph">🌐</span>
+            </div>
+            <div class="luminary-info">
+              <span class="luminary-role text-sage">DIGITAL ARCHITECT</span>
+              <h3 class="luminary-name">Jimmy Wales</h3>
+              <p class="luminary-title">Co-Founder of Wikipedia</p>
+              <p class="luminary-quote">Keynote on decentralized human collaboration, open access to knowledge, and AI safety.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section ca-section" id="ca-portal">
+      <div class="section-container">
+        <div class="section-hud-bar">
+          <span class="hud-sec-code">07 // CAMPUS AMBASSADORS</span>
+          <span class="hud-sec-line"></span>
+          <span class="hud-sec-status">10,000+ STUDENT LEADERS</span>
+        </div>
+
+        <div class="ca-banner-card">
+          <div class="ca-content">
+            <span class="section-tag">LEAD YOUR INSTITUTION</span>
+            <h2 class="ca-title">Become the Face of Techfest 30th Edition at Your College</h2>
+            <p class="ca-desc">
+              The Techfest Campus Ambassador (CA) Programme is one of the largest student leadership networks in India. 
+              Represent Asia's premier festival, organize regional qualifying events, and earn prestigious certificates directly from IIT Bombay.
+            </p>
+
+            <div class="ca-perks-grid">
+              <div class="perk-box">
+                <span class="perk-icon">📜</span>
+                <span class="perk-text">Official IIT Bombay Certificate of Leadership</span>
+              </div>
+              <div class="perk-box">
+                <span class="perk-icon">🎟️</span>
+                <span class="perk-text">Free All-Access Passes & Technoholix VIP Access</span>
+              </div>
+              <div class="perk-box">
+                <span class="perk-icon">🎁</span>
+                <span class="perk-text">Exclusive Techfest Official Merchandise & Swag Kits</span>
+              </div>
+              <div class="perk-box">
+                <span class="perk-icon">💼</span>
+                <span class="perk-text">Internship & Direct Industry Networking Channels</span>
+              </div>
+            </div>
+
+            <div class="ca-cta-group">
+              <a href="https://techfest.org" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <span>APPLY AS CAMPUS AMBASSADOR →</span>
+              </a>
+              <button class="btn btn-outline" id="ca-guidelines-btn">
+                <span>VIEW CA LEADERBOARD</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="sponsors-wall">
+          <div class="sponsors-title">TITLE PRESENTER & PRESTIGIOUS PARTNERS</div>
+          <div class="sponsors-strip">
+            <div class="sponsor-pill" style="border-color: #EF4444; color: #FFFFFF;">UNION BANK OF INDIA</div>
+            <div class="sponsor-pill">ISRO</div>
+            <div class="sponsor-pill">DRDO</div>
+            <div class="sponsor-pill">UN ESCAP</div>
+            <div class="sponsor-pill">APCTT</div>
+            <div class="sponsor-pill">UNESCO</div>
+            <div class="sponsor-pill">MAKE IN INDIA</div>
+            <div class="sponsor-pill">GOOGLE CLOUD</div>
+            <div class="sponsor-pill">TATA MOTORS</div>
+            <div class="sponsor-pill">LARSEN & TOUBRO</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="cyber-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-link">
+            <div class="brand-glyph">
+              <span class="tf-icon">⚡</span>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">TECHFEST</span>
+              <span class="brand-sub">IIT BOMBAY // 30TH EDITION</span>
+            </div>
+          </div>
+          <p class="footer-tagline">
+            Union Bank of India Presents IIT Bombay's Techfest 30th Edition: An Aetherial Renaissance. 
+            Organized annually with dedication by the student community of the Indian Institute of Technology Bombay.
+          </p>
+          <div class="footer-coords">
+            <span>Student Activity Centre (SAC), IIT Bombay, Powai, Mumbai - 400076, India</span>
+          </div>
+        </div>
+
+        <div class="footer-nav-col">
+          <h5 class="f-col-title">FESTIVAL ARENAS</h5>
+          <a href="#arenas">International Robowars</a>
+          <a href="#arenas">AI for Tech Readiness</a>
+          <a href="#arenas">The India @ 71/100 Challenge</a>
+          <a href="#arenas">Technoholix Concerts</a>
+          <a href="#arenas">Ozone Gaming Arena</a>
+        </div>
+
+        <div class="footer-nav-col">
+          <h5 class="f-col-title">ESSENTIALS</h5>
+          <a href="#pass-studio">Delegate Pass Studio</a>
+          <a href="#schedule">Festival Itinerary</a>
+          <a href="#competitions">Competitions & Rules</a>
+          <a href="#ca-portal">Campus Ambassador Program</a>
+          <a href="#about">The 30th Edition Theme</a>
+        </div>
+
+        <div class="footer-nav-col">
+          <h5 class="f-col-title">CONNECT</h5>
+          <button class="footer-cmd-trigger" id="footer-cmd-btn">Quick Navigator [⌘K]</button>
+          <a href="https://techfest.org" target="_blank" rel="noopener noreferrer">techfest.org (Official Domain)</a>
+          <div class="social-links-row">
+            <a href="https://instagram.com/techfest_iitbombay" target="_blank" rel="noopener noreferrer" class="social-icon" title="Instagram">IG</a>
+            <a href="https://linkedin.com/company/techfest" target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn">IN</a>
+            <a href="https://youtube.com/techfestiitbombay" target="_blank" rel="noopener noreferrer" class="social-icon" title="YouTube">YT</a>
+            <a href="https://x.com/Techfest_IITB" target="_blank" rel="noopener noreferrer" class="social-icon" title="Twitter/X">X</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="f-copy">
+          © 2026 TECHFEST 30TH EDITION, IIT BOMBAY. ALL RIGHTS RESERVED.
+        </div>
+        <div class="f-credits">
+          AN AETHERIAL RENAISSANCE // 100% 2D VISUAL CRAFT // NO 3D ASSETS
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cyber-modal-backdrop" id="cyber-modal" aria-hidden="true">
+    <div class="cyber-modal-card">
+      <div class="modal-header">
+        <div class="modal-hud-info">
+          <span class="m-code" id="modal-code">ARENA SPECIFICATION</span>
+          <span class="m-status text-sage">PUBLIC ACCESS</span>
+        </div>
+        <button class="modal-close-btn" id="modal-close" aria-label="Close modal">✕</button>
+      </div>
+
+      <div class="modal-body" id="modal-body-content"></div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="modal-dismiss-btn">CLOSE</button>
+        <a href="#pass-studio" class="btn btn-primary" id="modal-action-btn">CLAIM FREE PASS →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="cmd-palette-backdrop" id="cmd-palette" aria-hidden="true">
+    <div class="cmd-palette-box">
+      <div class="cmd-input-row">
+        <span class="cmd-prompt-sign">&gt;</span>
+        <input type="text" id="cmd-input" class="cmd-search-input" placeholder="Type a section or event (e.g. 'pass', 'robowars', 'schedule', 'sound')..." autocomplete="off" spellcheck="false">
+        <span class="cmd-esc-tip">ESC TO CLOSE</span>
+      </div>
+
+      <div class="cmd-results" id="cmd-results-list"></div>
+
+      <div class="cmd-footer">
+        <span>[ ↑ ↓ ] Navigate</span>
+        <span>[ ↵ ] Select</span>
+        <span>[ ESC ] Close</span>
+        <span class="text-flame">Techfest Navigator</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
